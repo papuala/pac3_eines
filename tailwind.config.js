@@ -3,6 +3,10 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Roboto', 'Arial', 'sans-serif'],
+        'serif': ['Georgia', 'Times New Roman', 'serif'],
+      },
       colors: {
         'brown-dark': '#7b5e22',
         'brown-light': '#f1dcbf',
