@@ -37,10 +37,10 @@
 @tailwind utilities;
 
 @layer components {
-    .member {
-        @apply w-400 md:w-350 ;
+    .nav-link {
+        @apply text-xs font-bold text-white hover:text-brown-light md:text-base lg:text-lg ;
     }
-    .member-img { 
-        @apply h-72 mb-5 bg-center bg-cover ;
+    .logo {
+        @apply w-50 h-50 rounded-full hover:border-2 hover:border-brown-light lg:w-60 lg:h-60 xl:w-70 xl:h-70 md:inline ;
     }
 }

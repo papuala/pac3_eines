@@ -4,51 +4,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <title>Membres</title>
   </head>
-  <body>
+  <body class="bg-brown-lighter">
     <include src="./views/header.html"></include>
-    <h1 class="text-center">Membres del Club</h1>
+    <h1 class="pt-10 pb-10 text-center text-5xl font-bold">Membres del Club</h1>
     <div class="flex flex-wrap justify-between w-4/5 mx-auto text-center">
-      <div class="member">
-        <div id="member1" class="member-img"></div>
-        <h3>Marc García</h3>
-        <p>És un jove estudiant d'enginyeria que ha estat jugant a escacs des de la seva infància. És un dels membres fundadors del club i s'encarrega de coordinar les partides i els tornejos.</p>
-        <p>ELO: 1750</p>
-      </div>
-      <div class="member">
-        <div id="member2" class="member-img"></div>
-        <h3>Jana Rodríguez</h3>
-        <p>És una jove artista que ha trobat als escacs una font d'inspiració per a les seves obres. És una de les membres fundadores del club i ha contribuït a la creació del disseny dels cartells dels tornejos.</p>
-        <p>ELO: 1530</p>
-      </div>
-      <div class="member">
-        <div id="member3" class="member-img"></div>
-        <h3>Omar Bello</h3>
-        <p>És un jove estudiant de matemàtiques que ha descobert el món dels escacs recentment. Ha demostrat una gran habilitat en el joc i és molt actiu en les activitats del club.</p>
-        <p>ELO: 1600</p>
-      </div>
-      <div class="member">
-        <div id="member4" class="member-img"></div>
-        <h3>Laia Sánchez</h3>
-        <p>És una apassionada dels escacs des de ben petita i ha guanyat diversos campionats a nivell local. És una de les membres fundadores del club i s'encarrega d'organitzar les partides i els tornejos.</p>
-        <p>ELO: 1850</p>
-      </div>
-      <div class="member">
-        <div id="member5" class="member-img"></div>
-        <h3>Hugo Fernández</h3>
-        <p>És estudiant de psicologia i amant dels escacs des de fa anys. Es va unir al club fa poc i s'encarrega de coordinar les activitats socials.</p>
-        <p>ELO: 1400</p>
-      </div>
-      <div class="member">
-        <div id="member6" class="member-img"></div>
-        <h3>Sara Gómez</h3>
-        <p>És una jove estudiant de biologia que fa poc s'ha unit al club. Encara que no té tanta experiència en el joc com els membres fundadors, està molt motivada per aprendre i millorar les seves habilitats en els escacs.</p>
-        <p>ELO: 1480</p>
-      </div>
+      <include src="components/member-card.html">
+        {
+          "name": "Marc García",
+          "text": "És un jove estudiant d'enginyeria que ha estat jugant a escacs des de la seva infància. És un dels membres fundadors del club i s'encarrega de coordinar les partides i els tornejos.",
+          "ELO": "1750",
+          "id": "member1"
+        }
+      </include>
+      <include src="components/member-card.html">
+        {
+          "name": "Jana Rodríguez",
+          "text": "És una jove artista que ha trobat als escacs una font d'inspiració per a les seves obres. És una de les membres fundadores del club i ha contribuït a la creació del disseny dels cartells dels tornejos",
+          "ELO": "1530",
+          "id": "member2"
+        }
+      </include>
+      <include src="components/member-card.html">
+        {
+          "name": "Omar Bello",
+          "text": "És un jove estudiant de matemàtiques que ha descobert el món dels escacs recentment. Ha demostrat una gran habilitat en el joc i és molt actiu en les activitats del club.",
+          "ELO": "1600",
+          "id": "member3"
+        }
+      </include>
+      <include src="components/member-card.html">
+        {
+          "name": "Laia Sánchez",
+          "text": "És una apassionada dels escacs des de ben petita i ha guanyat diversos campionats a nivell local. És una de les membres fundadores del club i s'encarrega d'organitzar les partides i els tornejos.",
+          "ELO": "1850",
+          "id": "member4"
+        }
+      </include>
+      <include src="components/member-card.html">
+        {
+          "name": "Hugo Fernández",
+          "text": "És estudiant de psicologia i amant dels escacs des de fa anys. Es va unir al club fa poc i s'encarrega de coordinar les activitats socials.",
+          "ELO": "1400",
+          "id": "member5"
+        }
+      </include>
+      <include src="components/member-card.html">
+        {
+          "name": "Sara Gómez",
+          "text": "És una jove estudiant de biologia que fa poc s'ha unit al club. Encara que no té tanta experiència en el joc com els membres fundadors, està molt motivada per aprendre i millorar les seves habilitats en els escacs.",
+          "ELO": "1480",
+          "id": "member6"
+        }
+      </include>
     </div>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
